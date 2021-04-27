@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Test</title>
+	<link href="css/custom.css" rel="stylesheet">
+	<script src="js/bootstrap.js"></script>
+	<style>
+
+		body {
+			background-color: #25b6ea;
+		}
+
+}
+	</style>
+</head>
+<body>
+
+								<!-- NAVIGATION BAR -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-xl">
+  
+    <a class="navbar-brand" href="#">
+      <img src="assets/logo.svg" alt="" width="50" height="50">
+    </a>
+    
+    <h2 class="d-lg-none d-block">FOGE Finance</h2>
+         
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#HowToBuy">How to buy</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#Tokemonics">Tokenomics</a></li>
+            <li><a class="dropdown-item" href="https://ftmscan.com">Token contract</a></li>
+            <li><a class="dropdown-item" href="#Roadmap">Roadmap</a></li>
+          </ul>
+       </li>
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Community
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#Tokemonics">Telegram</a></li>
+            <li><a class="dropdown-item" href="https://ftmscan.com">Discord</a></li>
+            <li><a class="dropdown-item" href="#Roadmap">Forum</a></li>
+          </ul>
+       </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#Contacts">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+								<!-- MAIN VIEW -->
+
+ <div class="container mt-5">
+ 
+ <div class="row justify-content-center align-items-center gy-4 ">
+ 
+    <div class="col-5 text-light ">
+   
+          <h4 class="display-6 pb-3 fw-light fst-italic">FOGE</h1>
+          <h4 class="display-6 fw-bold">FTM+HOGE</h1>
+	  <h4 class="display-6 fw-bold">Classic rules.</h1>
+	  <h4 class="display-6 fw-bold">Exclusively for FTM chads.</h1>
+	 
+	 <div class="d-none d-xl-block mt-4 ms-5 ps-5">
+	 <a href="https://app.sushi.com" class="btn btn-purple">
+         <img src="assets/sushi.png" width="40" height="40">
+         <span class="fw-bold">Buy on SushiSwap</span>
+         </a>
+         </div>
+   </div>
+   
+   <div class="col-5 ">
+          <img class="img-fluid" src="assets/gigalogo3.svg">
+   </div>
+   
+   <div class="col-12 d-flex justify-content-center d-inline d-xl-none">
+	 <a href="https://app.sushi.com" class="btn btn-purple">
+         <img src="assets/sushi.png" width="40" height="40">
+         <span class="fw-bold">Buy on SushiSwap</span>
+         </a>
+   </div>
+    
+  </div>
+  </div>
+
+
+	<script src="snowf.js"></script>
+	<script>
+
+		// init snowf
+		var snowflakes = snowf.init({
+			// set options here
+		});
+		window.onresize = function() {
+			snowflakes.resize();
+		};
+
+		// change snow speed
+		function setSpeed(opt) {
+			document.getElementsByClassName('active')[0].className = '';
+			var evt = window.event || arguments.callee.caller.arguments[0];
+			evt.target.className = 'active';
+			snowflakes.speed(opt);
+		}
+
+		// change wind level
+		function setWind(wind) {
+			document.getElementsByClassName('active')[1].className = '';
+			var evt = window.event || arguments.callee.caller.arguments[0];
+			evt.target.className = 'active';
+			snowflakes.wind(wind);
+		}
+
+	</script>
+</body>
+</html>
